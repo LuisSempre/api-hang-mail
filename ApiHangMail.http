@@ -1,0 +1,6 @@
+@ApiHangMail_HostAddress = http://localhost:5080
+
+GET {{ApiHangMail_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
