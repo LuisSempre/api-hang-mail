@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Z+VQYCAHrV2j4PfOCE0El1/X6EIVgHy71VM9Eu1JbyA=",
+  "Source": "ApiHangMail",
+  "BasePath": "_content/ApiHangMail",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
