@@ -4,11 +4,9 @@ using ApiHangMail.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Hangfire
 builder.Services.AddHangfire(cfg => cfg.UseMemoryStorage());
 builder.Services.AddHangfireServer();
 
-// Injeção do EmailService
 builder.Services.AddSingleton<EmailService>();
 
 builder.Services.AddControllers();

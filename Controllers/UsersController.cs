@@ -23,10 +23,7 @@ public class UsersController : ControllerBase
     [HttpPost("cadastrar")]
     public IActionResult CadastrarUsuario([FromBody] UserRequest request)
     {
-        // Simula salvar no banco (você faria isso de verdade aqui)
         Console.WriteLine($"Usuário cadastrado: {request.Nome} <{request.Email}>");
-
-        // Agenda o envio do e-mail em background
         _backgroundJobs.Enqueue(() =>
             _emailService.SendWelcome(request.Email, request.Nome));
 
